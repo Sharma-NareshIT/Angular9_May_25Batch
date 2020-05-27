@@ -1,0 +1,91 @@
+1. What are the basic requirements for building an End to End Web Application?
+	- HTML
+	- CSS
+	- Client Side Script
+	      JavaScript, TypeScript
+	- Server Side Script
+	      JSP, PHP, Node JS, ASP
+	- Database
+	      Oracle, MySql, MongoDb
+	- Middleware
+	      Express , JsX
+	- Publishing Tools
+	      Photoshop, Flash
+	- IDE's
+	      Eclipse, WebStrom, VS code, sublime
+	      Edit ..
+
+"Tim Berners Lee" introduced - Web - HTML - 1990
+
+What are the Challenges in modern Web Development?
+==============================================
+	         > 90 % of web users
+	            are using web from smart devices
+	             [mobile, tabs]
+1. Unified UX
+     - Unified User Experience
+     - An application should have same feel, appearence and functionality across any device.
+     - Application should not optimize.
+     - Mobile users must get access to everything.
+
+2. Fluid UX
+     - User will stay on only one page and can get access to everything on to the page.
+     - New details are added to page without reloading the complete page.
+
+3. Loosely coupled and extensible
+    - Without disturbing the existing application we must able to push in new components.
+
+4. Simiplified Deployment and upgrades
+
+
+What is the solution?
+==================
+- Better build SPA or Progressive web application instead of tradional web applications.
+
+How to build SPA and Progressive Application? Can we continue with HTML, CSS, JavaScript and JQuery?
+
+		   (or)
+Can we build SPA and Progressive web Applications using JavaScript and JQuery?
+
+	                  "Yes"
+
+Why we are looking into New Technologies for building SPA and Progressive Web Application? What are the issues with JavaScript and JQuery?
+
+
+1. Lot of DOM manipulations.
+    [DOM - Document Object Model]
+2. Lot of references
+3. Lot of coding
+4. Heavy pages
+5. Slow Rendering
+6. Navigation issues
+7. Data Binding issues [depend on lot of events]
+8. JavaScript is a Language and JQuery is an Library
+    [Language and Library can build Application but can't 
+	control application flow ]
+
+	 "Better use a Framework"
+- A framework is an software architectural pattern that can build the application and also control the application flow.
+
+Do we have any Framework to use client side?
+	       "Yes"
+  - Knockout JS
+  - Ember Js
+  - Vue
+  - Backbone Js
+  - Angular Js
+	Client Side "MVC, MVP, MVVM"
+
+  Angular JS is an open source and cross platform framework introduced by Google and mantained by a large community of organizations and developers to address the issues in SPA.
+
+
+
+
+
+
+
+
+
+
+
+
