@@ -1,0 +1,50 @@
+	        Key Features of Angular
+	       ======================
+- Angular is Cross Platform
+  *It uses frameworks like Cordova, Ionic, NativeScript
+  *You can build cross platform mobile apps.
+  *You can also build cross platform desktop installed apps.
+  [window, Mac and others ... ]
+  *Angular application can run on any device and any OS.
+
+- Modular and Asynchronous
+  * Only the library that is required for the current situation
+    is loaded, which means that it is not using Legacy library.
+  * Application specific framework will be used.
+  * Asynchronous uses non-blocking technique
+      [Makes a request and will not wait for response, it proceeds to next]
+  * It make application perform fast.
+
+- Frameworks for Building App
+ * It can use frameworks like MVC, MVP, MVVM client side
+ * MVC, MVP, MVVM - Reusability, Extensibility, Testability
+   Maintainability.
+ * Separtion and Resuability concerns
+ * These frameworks compliment SPA and Progressive apps
+ * These frameworks will resolve data binding issues.
+
+- Speed and Performance
+ * As it is modular it is light weight
+ * Less startup time
+ * Uses only the framework required for the situation
+ * Angular application run with 10x speed than angular js app.
+ * It can uses techniques like
+	a) Code Splitting
+	b) Dynamic Loading
+ * Angular 9 is now using IVY a rendering engine which can provide the stratergy of "Build-Run"
+ * Angular provide tools like CLI : building fast, adding component and tests and deploy with simple commands.
+
+- End to End Solution
+ * It provides all the tools required for a developer to build, debug, test and deploy applications.
+ * Angular supports high level animations [Html, CSS]
+ * Angular supports plugins and widgets by using "Materials", which are ready to integerate and deoply.
+ * Pre-defined templates to implement.
+
+	
+Angular - MVC, MVVM, MVP
+	Model, View, Controller
+	Model	- Data [ Data- Client Side]
+	Views	- UI
+	Controller - Application Logic
+
+	             TypeScript 
