@@ -1,0 +1,49 @@
+1. What are the basic requirements for building End to End Web Applications?
+2. What are the challenges in modern Web Development?
+3. How to overcome the issues? Solution.
+4. What are differences between JavaScript, JQuery and Angular JS?
+5. Difference between Angular JS and Angular.
+6. How angular is different from React?
+
+		    TypeScript
+
+Problems in JavaScript:
+- JavaScript is not a strongly typed language.
+	var x = 10;   // x is initialized with 10 - number
+	x = "John"; // valid
+- JavaScript allows contradictionary values.
+- Explicitly developer have to handle types and their restrictions.
+- JavaScript supports OOP but not completely OOP language.
+- Contracts, Templates, Code Security, Dynamic Polymorphism are not completely supported.
+
+	class JavaScriptClass {
+	  private name = "John"; // private is not supported
+	 }
+- JavaScript is not strictly typed by default. You have to turn on strict mode explicitly.
+
+	Strictly Typed = Follow Coding Rules
+	[Visit PMD or Sonar for Coding Rules]
+	https://pmd.github.io/
+- JavaScript handles schema less data, which will a problem when you are dealing with Schema based.
+
+- Google Angular Team Decided to develop a new Language in order overcome the issues with JavaScript and they started a script called "AtScript" in 2013
+
+- Microsoft already developed a similar script for their ".NET" languages called "TypeScript". 
+
+- TypeScript designed by "Anders Hejlberg" who developed a language called "C#" for Microsoft.
+
+- TypeScript is an Open Source and Cross platform language development by Microsoft and it is being used by Angular and other technologies related to web.
+
+- TypeScript is strictly superset of JavaScript.
+- TypeScript is in strict mode by default.
+- TypeScript is Strongly Typed. [Duck Typing]
+- TypeScript is an OOP. It supports all features of OOP.
+- TypeScript transcompiles everything into JavaScript.
+- TypeScript speeds up your development experience by catching errors and providing fixes before you even run your code.
+- TypeScript runs on any browser, any OS,  and any where JavaScript runs.
+- TypeScript supports low level features. So that it can directly interact with hardware services.
+- It can operate on very lowmemory devices.
+- TypeScript is completely built by using TypeScript.
+- TypeScript can use all JavaScript library.
+
+	     TypeScript Architecture
