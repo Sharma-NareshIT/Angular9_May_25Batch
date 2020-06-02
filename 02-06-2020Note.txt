@@ -1,0 +1,52 @@
+What are the Features of TypeScript?
+	
+	           TypeScript Architecture
+	[TypeScript built by using TypeScript]
+
+ Compiler : It used as translator
+ 1. Core TypeScript Compiler
+	- Developer write code in TypeScript
+	- Core TypeScript compiler verifies the keywords,
+	  Syntax, Blocks, DataTypes, memory allocation.
+	- It reports the errors.
+	- If it is compiled successfully then it is ready for
+	  transcompiling.
+	- The key components in TypeScript core compiler
+	  are:
+		core.ts
+		program.ts
+		scanner.ts
+		emitter.ts
+		parser.ts
+		checker.ts
+
+ 2. Standalone Compiler
+	- It is a compiler used to transcompile the type
+	  script code into JavaScript.
+	- "TSC" is a transcompiler for TypeScript, which
+	    generates a JavaScript file.
+
+	demo.ts → tsc.ts [compiler] → demo.js
+
+Service: It is a pre-defined business logic with re-usable functions. 
+
+3. TypeScript Language Service:  It provides all the repository [library] for typescript language. Keywords, functions, syntax all are verified from language service.
+	       "services.ts"
+
+  ex:
+	array.length = "A";  // invalid
+	          [number] = can't assign string
+
+
+4. tsserver [server.ts]:  It is responsible for hosting , compiling, processing and generating output for typescript programs. It is the location where typescript programs are compiled and processed.
+
+5. VS Shim:  It is responsible for translating your typescript code into platform independent code. [byte code]
+
+6. VS Managed Language Service: It contains the library, which is cross platform.
+
+7. Editors: Contains the rules for an IDE [Integrated Development Environments] in order to handle typescript. The IDE can be
+	Visual Studio Code
+	Sublime
+	Web Strom
+	DW, Eclipse etc..
+
