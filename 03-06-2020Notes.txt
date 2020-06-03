@@ -1,0 +1,136 @@
+What is TypeScript?
+What are the Features of TypeScript?
+TypeScript Architecture
+
+	Settingup Environment for TypeScript
+	================================
+1. Install Node JS on your PC
+
+    - We are installing Node Js for a Package Manager called
+	"NPM"
+    - Package Manager is an software solution for installing library on your PC. 
+    - Various Package Managers are used by developers like
+	- NPM, Bower, Ruby Gems, NuGet etc..
+
+     a) Visit 
+	https://nodejs.org/en/download/
+      b) Download ".msi" for your windows PC
+      c) Install from ".msi"
+    	
+Note: Install  Node JS 10+   
+    
+      e) Verify Installed Node JS and NPM
+	- Open Command Prompt
+	     C:\> node -v
+	     C:\> npm -v 
+
+2. Install TypeScript  [Latest version  is 3.9]
+
+    - Open Command Prompt
+    - Type the command
+
+	>npm install -g  typescript@latest
+
+	g [Global]
+    - Check the installed version by using the command
+
+	> tsc -v
+
+		
+Working with TypeScript in a WebSite:
+================================
+1. Make sure that your computer have a Web Server
+	Tomcat, IIS, [Internet Information Services]
+    - Every windows PC have a web server called IIS
+    - Goto Control Panel
+    - Open Administrative Tool
+    - Look for "Internet Information Services Manager"
+ 
+    Note: It IIS is missing in your Control Panel then Add from "Programs and Features"
+	- Goto Programs and Features
+	- Click on "Turn Windows Features ON or OFF
+	- Select "Internet Information Services"
+	- OK
+2. Test your WebServer
+	- Open Browser
+	- Type the following URL
+	 
+	  http://localhost   (or)   http://127.0.0.1
+
+3. Create a new Website on Local Server
+    [Technically Web is a Virtual Directory on WebServer]
+    - Open Local IIS
+	Run → inetmgr
+	[Control Panel → Administrative Tools → IIS]
+    - Expand Local Computer [http://localhost]
+    - Expand "Sites" folder
+    - Right Click on "Default Website"
+    - Select the option
+	"Add Virtual Directory" [Website]
+ 
+	Alias : [SiteName]  :  TypeScriptOnlineProject
+	Physical Path         :  C:\TypeScriptOnlineProject
+
+    - OK
+
+  Site Virtual Path:  
+        http://localhost/TypeScriptOnlineProject
+  Physical Path:
+        C:\TypeScriptOnlineProject
+
+4. Create an Index Page for Website
+     - Open NotePad and Create new HTML document
+
+       <!DOCTYPE html>
+<html>
+<head> <title> TypeScript | Home </title> </head>
+<body>
+   <h2> TypeScript Online Project </h2>
+</body>
+</html>
+
+     - Save into website Physical Path by name
+	"index.html"
+
+5. Lets Create a TypeScript file for Project
+    - Create a new folder in Website Physical Path
+	"code"
+    - Open Notepad and type the "TypeScript code"
+
+	var msg = "Welcome to TypeScript";
+	document.write(msg);
+    - Save  into "Code" folder by name
+	 "Welcome.ts"
+    - Transcompile TypeScript file into JavaScript
+ 
+            C:\TypeScriptOnlineProject\Code> tsc welcome.ts
+
+     - This Generates "welcome.js"
+
+     - Use Welcome.js in your HTML Page.
+
+<!DOCTYPE html>
+<html>
+<head> <title> TypeScript | Home </title>
+  <script src="code/welcome.js"> </script>
+ </head>
+<body>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
