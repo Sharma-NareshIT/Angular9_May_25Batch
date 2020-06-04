@@ -1,0 +1,85 @@
+IDE [Integrated Development Environment] for TypeScript
+- IDE provides a platform for developer to build, debug, test and deploy application.
+- You can use various IDEs
+	Sublime
+	WebStrom
+	Visual Studio Code
+	Visual Studio
+	Eclipse etc.. 
+
+Get Visual Studio Code and Install from
+	https://code.visualstudio.com/
+
+1. Open Visual Studio Code IDE
+2. Install support for JavaScript 
+     [You can find in Home Screen Customize panel]
+3. Goto "Extentions" and install following extentions
+	[Ctrl + Shift + X]
+
+	a) TsLint
+	b) Live Server 
+	c) vscode-Icons
+
+4. Open your project in VS Code
+      - File → Open → Choose your website phyical path
+		C:\TypeScriptOnlineProject
+5. Open Index.html
+    - Right Click in Index.html
+    - Open with Live Server
+
+6. Goto "Code" folder and add a new File [+] 
+	          "hello.ts"
+    var msg = "Hello ! from TypeScript";
+    document.write(msg);
+
+7. Open Terminal   [Terminal Menu → New Terminal]
+
+	Ctrl + ` [backtick]
+
+8. Compile hello.ts
+	> tsc hello.ts
+
+Note: If  Terminal is using "PowerShell" and it is unable to execute "tsc" then:
+	- Goto Terminal Window
+	- Choose the option "Select Default Shell"
+	- Choose "Command Prompt [cmd.exe] as your
+	  terminal shell.
+	- Then click on New Terminal [+] icon
+	- In new terminal try your "tsc"
+
+Practice Your TypeScript from Console Mode:
+======================================
+1. Create a new TypeScript file
+	 "welcome.ts"
+    console.log("Welcome to TypeScript");
+    console.log("Hello ! World");
+
+2. Compile in Terminal
+	> tsc  welcome.ts
+
+3. Run the JavaScript file
+	> node welcome.js
+	
+
+		 TypeScript Language
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
