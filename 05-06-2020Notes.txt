@@ -1,0 +1,98 @@
+	        TypeScript Language Basics
+1. Variables
+2. DataTypes
+3. Operators
+4. Statements
+5. Functions
+
+	            Variables in TypeScript
+- Variables are storage locations in memory where you can store a value and use it as a part of any expression.
+- Variables have 3 configuration states:
+	1. Declaration
+		var x;
+	2. Rendering / Assignment
+		x = 10;
+	3. Initialization
+		var x = 10;
+- JavaScript can handle variables without declaration and initialization when it is not in strict mode.
+- If JavaScript is in strict mode then it is mandatory to declare or initialize variable.
+- TypeScript is in strict mode by default.
+- Hence declaring or initialization of variables in mandatory.
+- Variables can be declared or initialized by using following keywords
+	1. var
+	2. let
+	3. const
+
+Var 
+- Var is used to define a function scope variable.
+- You can declare or initialized in any block of a function and access from another block with in the same function.
+- Var allows declaration, rendering, initialization.
+
+ Syntax:
+  function f1() {
+  var x = 10;	→ Initialized
+  if(x==10) {
+      var y;		→ Declared
+      y=20;		→ Assigned / Rendered
+  }
+  console.log(`x=${x}\n y=${y}`);   //y is valid as it is declared
+			     as function scope with var
+}
+f1();
+
+ - Var allows shadowing.
+ - Shadowing is the process of re-declaring or initializing the same name identifier within the scope.
+
+Syntax:
+function f1() {
+  var x = 10;
+  if(x==10) {
+      var y=20;
+      var y=30;	// y - shadowing
+  }
+  console.log(`x=${x}\n y=${y}`);
+}
+f1();
+
+- Var allows hoisting.
+- Hoisting is the process of using a variable in code before the declaration or initialization.
+
+Syntax:
+function f1() {
+  x = 10;
+  console.log(`x=${x}`);
+  var x;		// x is hoisted
+}
+f1();
+
+Let:
+ - It is used to define a block scope variable.
+ - If a variable is declared or initialized inside a block it is accessible only within the block.
+ - let allows declaring, rendering, initialization
+ - let will not allow shadowing.
+ - let will not allow hoisting.
+Syntax:
+function f1() {
+    x = 20;
+    console.log(`x=${x}`);
+    let x;	// invalid
+  }
+  f1();
+
+const:
+- It is also block scope like let.
+- It allows only initialization.
+- It will not allow declaration and rendering.
+- It will not allow shadowing
+- It will not allow hoisting.
+
+
+
+
+
+
+
+
+
+
+
