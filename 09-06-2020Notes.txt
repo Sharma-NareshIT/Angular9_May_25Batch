@@ -1,0 +1,60 @@
+	         TypeScript Data Types
+- Primitive Types
+  1. number type
+      Syntax: 
+	 let variableName:Datatype = value;
+	 let float:number = 4.6;
+
+  2. string type
+  
+
+	         String Type in TypeScript
+- String is literal with group characters [alpha numeric and special chars] enclosed in 
+	a) Double Quotes
+		"string"
+	b) Single Quotes
+		'string'
+	c) Back Ticks 
+		`string`
+- Double and Single quotes are used to swap between outer and inner string vice versa.
+ 
+     let msg:string ="<a href='home.html'>Home</a>";
+     let msg:string ='<a href="home.html">Home</a>';
+
+- Back Tick is available from ES5 
+- Back Tick allows an Embeded Expression inside string.
+- Single and Double quotes will not allow embeded expression they use concatination.
+- String with embeded expression is defined by using
+	"${ }"  - it is possible only for backtick
+
+Ex:
+let username:string = "John"
+let age:number = 20;
+console.log("Hello !"+ " " + username+" "+"You will be"+ " " + (age+1) + " " +"Next Year");
+console.log(`Hello ! ${username} You will be ${age+1} Next Year`);
+
+- In a string literal you can define special chars. But few special characters are not printable. The non printable character usually escape printing.
+
+- You can print any non-printable character by using "\".
+
+      let path:string = "D:\Pics\flower.jpg";
+      console.log(path);
+     
+       O/P:   D:Picsflower.jpg
+
+      let path:string = "D:\\Pics\\flower.jpg";
+
+       O/P:   D:\Pics\flower.jpg
+
+Ex:
+let path:string = "\"D:\\Images\\Cars\\Ferrari.jpg\"";
+console.log(`Path=${path}`);
+
+   String Handling
+
+
+
+
+
+
+
