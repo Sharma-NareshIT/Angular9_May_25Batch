@@ -1,0 +1,83 @@
+Primitive Types
+	a) number
+	b) string
+
+	 	String Handling
+-TypeScript can use all JavaScript string functions to handle any string dynamically.
+-TypeScript can use ES5 and ES6 latest features.
+
+1. charAt()	: It returns the character at specified
+		  index.
+ 
+	let msg:string = "Welcome to TypeScript";
+	msg.charAt(0);       // W
+
+
+
+2. charCodeAt()	: It returns the Unicode of the character
+		  at specified index. [UTF]
+		  
+	let name:string = "Ajay";
+	name.charCodeAt(0);    // 65
+
+Ex:
+let username:string = "John";
+let firstCharCode:number = username.charCodeAt(0);
+if(firstCharCode>=65 && firstCharCode<=90){
+    console.log(`Hello ! ${username}`);
+} else {
+    console.error(`Error: Name must start with UpperCase Letter`);
+}
+
+3. startswith() ]  These are boolean functions used to verify
+4. endswith()  ]   whether the give string is starting with or
+	           ending with specified char(s) and return
+	           true or false.
+
+   Syntax:
+	let name:string = "btnSubmit";
+	name.startsWith("btn");     // true
+
+Ex: startsWith()
+
+let className:string = 'bg-primary';
+if(className.startsWith("form")) {
+    console.log(`You Defined a Form Class`);
+} else if(className.startsWith("btn")) {
+    console.log(`You Defined a Button Class`);
+} else {
+    console.log(`You are using Miscelaneous class ${className}`);
+}
+
+Ex: endsWith()
+
+let className:string = 'text-primary';
+if(className.endsWith("center")) {
+    console.log(`You Defined an Alignment Class`);
+} else if(className.endsWith("primary")) {
+    console.log(`You Defined Contextual Class`);
+} else {
+    console.log(`You are using Miscelaneous class ${className}`);
+}
+
+5. indexOf()          :  It returns the index number of specified
+		character in a string. It returns the
+		first occurance index. It returns -1 if
+		the given char not found.
+
+6. lastIndexOf()    :  It is similar to indexOf() but gets the
+		last occurance index number of 
+		specified char.
+
+
+Ex:
+let email:string = "john@gmail.com";
+if(email.indexOf("@")==-1) {
+    console.error(`Error: Invalid email [@ Missing]`);
+} else {
+    console.log(`Your email ${email} Verified..`);
+}
+
+
+
+
