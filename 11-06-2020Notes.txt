@@ -1,0 +1,86 @@
+1. charAt()
+2. charCodeAt()
+3. startsWith()
+4. endsWith()
+5. indexOf()
+6. lastIndexOf()
+
+7. includes()  :  It is used to verify whether the given chars
+	         are present in string. It returns boolean
+	         true/false.
+
+	yourString.includes("searchString"); // true/false
+
+Ex:
+let msg:string = "Welcome to JavaScript String Methods.";
+if(msg.includes("TypeScript")){
+    console.log(`You are using TypeScript`);
+} else if(msg.includes("JavaScript")) {
+    console.log(`You are using JavaScript`);
+}
+
+JavaScript have obsolete methods and properties.
+ [no-longer in use but still available in library]
+
+8. search() :  It can search for specified chars and return
+	     the starting index. so that we can know where
+	     the given chars occur. It returns -1 if the
+	     given char not found.
+
+ Syntax:
+	yourString.search("searchString");
+
+EX:
+let msg:string = "Welcome to JavaScript String Methods.";
+console.log(msg.search("TypeScript"));
+
+
+9. replace(): It can search for give chars in a string and 
+	   replace with new chars and returns a new string.
+	    The new string contains updated values.
+   Syntax:
+         yourString.replace("oldString", "newString");
+
+  Note: 
+         - replace() is case sensitive.
+         - replace() will only change the first occurance
+         - You have to use "RegularExpression" to replace any global value or case-insensitive.
+         - Regular Expression is defined in "/  /"
+         - It uses  the meta chars
+	+	one or more occurance
+	?	zero or one occurance
+	*	zero or more occurance
+	d	numeric
+	w	alpha numberic
+	g	global
+	i	case-insensitive
+ 
+Ex:
+let msg:string = "Welcome to javaScript. You are learning javaScript String Methods.";
+console.log(msg);
+let newString:string = msg.replace(/javascript/gi, "TypeScript");
+console.log(newString);
+
+g - global
+i - case-insensitive
+
+10. match():    It checks whether the given string is matching
+	      with specified regular expression and returns
+	      boolean true or false.
+
+  Syntax:
+	yourString.match(regExp);   // true/false
+
+	
+Ex:
+let mobile:string = "+919876543210";
+let regExp:any = /\+91[0-9]{10}/;
+if(mobile.match(regExp)) {
+    console.log(`Your Mobile ${mobile} Verified`);
+} else {
+    console.log(`Invalid Mobile:+91 with 10 digits`);
+}
+
+
+
+
