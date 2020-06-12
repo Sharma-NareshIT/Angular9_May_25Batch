@@ -1,0 +1,110 @@
+10. match()
+
+ 		Regular Expression
+- Regular expression uses a pattern for validating the format of value.
+- Regular expression is built by using 
+	a) Meta Characters and
+	b) Quantifiers
+
+Metacharacter		Description
+=================================================
+?		It defines zero or one occurance of char
++		It defined one or more occurances
+*		It defines zero or more occurances
+
+colour	]	colou?r
+color	]
+	
+Ex:
+let word:string = "color";
+let regExp:any = /colou?r/;
+if(word.match(regExp)){
+    console.log(`Your Spelling ${word} is Valid`);
+} else {
+    console.log(`Your Spelling ${word} is incorrect [color or colour] is valid`);
+}
+
+Metacharacter	Description
+---------------------------------------------------------------------------------------
+\^		Starts with
+^		Excluding the given all others allowed
+$		Ends with
+\		Special chars
+d		Only numeric allowed
+w		Alpha Numeric with underscore 
+		allowed. [uppercase, lowercase, 		number and underscore]
+i		Ignore case
+g		global
+[ ]		Range and specific set of chars
+[A-Z]		Only uppercase allowed
+[a-z]		Only lowercase allowed
+[a-Z] or [a-zA-Z]	Both upper and lowercase allowed
+[0-9]		Only numeric allowed
+[a-zA-Z0-9]	Alpha numeric
+[a,d,m]		Only specified chars allowed
+[^a,d,m]		Excluding specified chars all others
+		allowed.
+[a-mA-M4-9]	Only chars in specified range allowed
+\+ \- \. \@ \%	Special chars individually.
+(?=.*[A-Z])		Atleast one uppercase letter
+(?=.*[0-9])		At least one numeric
+(?=.*[!@#$%])	At least one special char
+
+
+[A-Z]     only uppercase letters allowed
+             How Many chars allowed?
+             by default only 1.
+
+Quantifier		Description
+===============================================
+ {n}		Exactly n-number of chars
+		{4} only 4 allowed
+ {n,m}		Minimum-n and Maximum-m
+		{4,10}
+ {n, }		Minimum-n and Maximum-any
+		{4, }
+
+Ex:
+ [A-Z]{4}		Exactly 4 uppercase letters only
+		JOHN - valid
+		JOH - Invalid
+		JOHNK- Invalid
+		john - Invalid
+ [A-Z]{4,10}	Uppercase between 4 to 10
+
+Ex:
+// Password 4 to 15 chars alpha numberic with at least 1 uppercase letter
+let password:string = "john123G";
+let regExp:any = /(?=.*[A-Z])\w{4,15}/;
+if(password.match(regExp)) {
+    console.log(`${password} - Strong Password`);
+} else {
+    if(password.length<4) {
+        console.log(`${password} - Poor Password`);
+    } else {
+        console.log(`${password} - Weak Password`);
+    }
+}
+
+11. substring()  : It can extract the a portion of string using
+	           start and end index. It can read bi-	           directional.
+
+	       Syntax:   msg.substring(0,7);
+		     msg.substring(7,0);
+
+
+12. substr()  : It is similar to substring() but allows only from
+	      start to end, where end index must be always
+	      a value after the start index.
+
+	      msg.substr(0,7);
+	      msg.substr(7,0);  // not valid
+
+
+
+
+
+
+
+
+
