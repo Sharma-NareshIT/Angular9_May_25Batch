@@ -1,0 +1,107 @@
+split()    : It can split the string at specified char and return
+                an array of strings.
+
+ Syntax:
+	yourString.split('delimeter');
+
+Ex:
+
+let msg:string = "SamsungTV,45000.55,InStock";
+let data:string[] = msg.split(',');
+for(var value of data) {
+    console.log(value);
+}
+console.log(`Name=${data[0]}`);
+
+trim(): It returns a new string by removing the leading spaces.
+
+Ex:
+let password:string = " john ";
+if(password.trim()=="john"){
+    console.log('Verified..');
+} else {
+    console.log('Invalid Password');
+}
+
+		         Primitive Types
+- number
+- string
+- boolean
+
+What is the purpose of storing a boolean value in memory? [true/false]
+
+		Boolean Type
+
+- boolean is used in decision making.
+- The boolean values are used to control the execution flow.
+- TypeScript uses "boolean" as data type to store a bool value in memory.
+- It can handle on "true or false".
+- Like JavaScript it is not 0 or 1 it is directly true or false.
+
+	JavaScript  1 = true
+		   0 = false
+- Traditionally boolean variable name must start with "is".
+
+Ex:
+let Name:string = "Samsung TV";
+let Price:number = 45000.55;
+let isInStock:boolean = true;
+console.log(`Name=${Name}\nPrice=${Price}\nStock=${(isInStock==true)?"Available":"Out of Stock"}`);
+
+
+		Undefined Type
+
+undefined  : Variable is available but no value defined.
+	
+not-defined: There is no reference for the variable you 	     	     specified.
+
+	     let x:number;		//x is undefined.
+	     console.log(`x=${x}\ny=${y}`); // y is not defined
+
+TypeScript supports Union of Types, which allows a variable to handle multiple types.
+
+	         let x:string|number = 10;
+
+Ex:
+let page:string ="about.html";
+let msg:string|number;
+if(page=="home.html"){
+   msg=`You requested for ${page} page`;
+} else {
+    msg = 404;
+}
+if(msg==400) {
+    msg = "Bad Request";
+} else if (msg==404) {
+    msg = "Not Found";
+}
+console.log(msg);
+
+Ex: Undefined
+
+let Name:string = "Samsung TV";
+let Price:number|undefined=50000.34;
+if(Price==undefined) {
+    console.log(`Name=${Name}`);
+} else {
+    console.log(`Name=${Name}\nPrice=${Price}`);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
