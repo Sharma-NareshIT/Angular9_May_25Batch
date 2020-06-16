@@ -1,0 +1,75 @@
+Primitive Data Types
+- number
+- string
+- boolean
+- undefined
+- null 
+
+	* compile time
+	let x:number;
+	console.log("x=" + x);     // x=undefined
+	
+	* run time
+	 let x:number = prompt("Enter Number");
+	 console.log("x=" + x );    // x = null
+
+null is an exception type , which indicates that there is no value provided into reference.
+
+Ex:
+1. Create a new File
+    		      strdemo.ts
+let userName:string|null = prompt("Enter Name");
+if(userName==null) {
+    document.write(`You Canceled..`);
+} else if(userName=="") {
+    document.write(`Name can't be Empty`);
+} else {
+    document.write(`Hello ! ${userName}`);
+}
+2. Transcompile
+	> tsc strdemo.ts
+
+3. Add  a new HTML file  "home.html"
+	
+     <head>
+      <script src="strdemo.js"> </script>
+    </head>
+
+Primitive Type
+- They are Immutable
+- Immutables are the object whose state can't be changed once the object is created.
+- string, number, boolean, null, undefined are immutable.
+- They have a fixed range for values.
+
+
+		Non-Primitive Types
+
+- They are Mutable
+- Mutable is a type of variable that can be changed.
+- A Mutable object is an object whose state can be modified after it is created.
+- Without disturbing the exisiting state it can point to an new memory to handle a different value.
+- It can change the memory as per requirement.
+- Hence no fixed range for values.
+- Value range varies according to memory available.
+- TypeScript Non-Primitive Types are
+	
+	1. Array
+	2. Object
+	3. Date
+	4. Regular Expression
+
+		     Array
+- In Computer Programming Arrays are used to reduce overhead and reduce complexity.
+- Arrays will reduce overhead by storing values in sequential order.
+- Arrays will reduce complexity by storing multiple value under one name.
+- Arrays can different types of values.
+- Array size can be changed dynamically.
+- Array can have the behavior of stack, queue, dictionary type collection.
+
+
+
+
+
+
+
+
