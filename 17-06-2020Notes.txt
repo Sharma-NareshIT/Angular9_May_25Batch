@@ -1,0 +1,81 @@
+		Declaring Array
+- You can use var, let or const.
+- Array uses the data type with meta character [ ], which specifies a range of values.
+
+	let  arrayName:string[];
+
+- TypeScript can configure Arrays of same type or various types. You can use "any" as the type to handle various values.
+
+	let arrayName:any[];
+
+- If array is designed to initialize various types of values then it is often known as "Tuple".
+
+- You have to initialize or assign memory for array.
+
+
+Syntax:
+let values:number[];
+values[0]=10;
+values[1]=20;
+console.log(values[0]);	// Type Error: No property - 0
+
+- You can initialize or assign memory for array by using meta character "[ ]"  or Array constructor "Array()".
+
+	Initializing:
+	let values:string[] = [ ];
+	let values:string[] = new Array();
+	
+	Assigning:
+	let values:string[]; 	→ declaring
+	values = [ ];	→ Assigning
+	values = new Array()→ Assigning 
+
+Ex:
+let values:number[] = [];
+values["0"]=30;
+values["1"]=50;
+console.log(values["1"]);
+
+FAQ: What is difference between [ ] and Array()?
+A: Meta character [] will allow to configure a Tuple if data type is "any" type.
+    Array() constructor will not allow various types of values even when the type is defined as "any" type during initialization. It will allow to assign.
+
+
+Ex: Valid
+let values:any[] = new Array();
+values[0]= 10;
+values[1]= "A";
+values[2]= true;
+console.log(`${values[0]}\n${values[1]}\n${values[2]}`);
+
+
+Ex: Invalid
+let values:any[] = new Array(10, "A", true);
+console.log(`${values[0]}\n${values[1]}\n${values[2]}`);
+
+
+- Array can handle any type of data in memory , which can be primitive type, non-primitive type, or a function.
+
+- Technically array is an object.
+- Object comprises of data and logic.
+
+Ex:
+let newArray:any[] = [0,"",true,[],function(){}];
+newArray[0] = 10;
+newArray[1] = "John";
+newArray[2] = true;
+newArray[3] = ["A", "B"];
+newArray[4] = function(){
+    console.log("Function in Array");
+};
+for(var item of newArray[3]) {
+    console.log(item);
+}
+newArray[4]();
+
+
+
+
+
+
+
