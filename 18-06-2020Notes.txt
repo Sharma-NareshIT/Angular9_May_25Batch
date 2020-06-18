@@ -1,0 +1,112 @@
+		Array Manipulation
+- TypeScript can use all JavaScript Array functions to manipulate array.
+
+	          Read Element from Array
+	          ----------------------------------
+
+Function		Description
+==============================================
+toString()	 	It returns all array elements separated
+		with ",".
+join()		It returns all array elements by using
+		a custom delimeter. [separator].
+filter()		It uses a condition and returns all 
+		elements that are matching with 		condition.
+
+find()		It is similar to filter but returns only
+		the first occurance value that matches
+		the condition.
+
+slice()		It can extract elements based on index
+		number.
+
+Ex:
+let products:string[] = ["TV","Mobile","Shoe"];
+console.log(`To String: ${products.toString()}`);
+console.log(`Join : ${products.join("-->")}`);
+console.log(`Slice : ${products.slice(1,2)}`);
+
+Syntax:
+             arrayName.find(function(val){
+	    return val|condition;
+              })
+             arrayName.filter(function(val){
+	    return  val|condition;
+              })
+
+Ex:  filter()
+let sales:number[] = [2000, 5000, 12000, 56000, 2100];
+console.log(sales.filter(function(sale){return sale>=10000}).toString());
+
+Ex: find()
+let sales:number[] = [2000, 5000, 12000, 56000, 2100];
+console.log(sales.find(function(sale){return sale>=10000}).toString());
+
+- You can use loops and Iterations
+   * Loop required condition, initialization and counter
+	for(var i=0; i<length; i++)
+	{
+	}
+   * Iterator is a software design pattern used to read elements from a collection in sequential order. It doesn't require explicit initializer, condition or counter.
+	for..in   → Iterates through properties
+	for..of   → Iterates through values
+
+Ex:
+let categories:string[] = ["Electronics","Fashion","Footwear"];
+
+//loop
+console.log(`-----Loop------`);
+for(var i=0;i<categories.length; i++) {
+    console.log(categories[i]);
+}
+
+//Iterate the properties
+console.log(`-----Iterate Properties----`);
+for(var property in categories) {
+    console.log(property);
+}
+
+//Iterate the values
+console.log(`----Iterate Values-----`);
+for(var value of categories) {
+    console.log(value);
+}
+
+//Iterate over properties and values
+
+for(var property in categories) {
+    console.log(`${property} : ${categories[property]}`);
+}
+
+
+	        Add Elements into Array
+	       ------------------------------------
+
+push()	Add new Element(s) as last item(s), towards end.
+unshift()	Add new Element(s) as first item(s).
+splice()	Add new Element(s) at specific position.
+
+Syntax:
+   arrayName.splice(startIndex, deleteCount, "NewItems,...")
+
+Ex:
+let categories:string[] = ["Electronics","Fashion"];
+function PrintList(){
+    for(var property in categories) {
+        console.log(`${property}:${categories[property]}`);
+    }
+}
+PrintList();
+categories.splice(1,0,"Mobiles","Footwear");
+console.log(`---New Categories Added----`);
+PrintList();
+
+
+
+
+
+
+
+
+
+
